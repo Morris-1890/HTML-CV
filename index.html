@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morris</title>
+</head>
+<body>
+    <section class="main">
+        <!-- A description of yourself containing a profile picture -->
+        <fieldset class="description" style="width: 95vw; display: flex; justify-content: space-evenly;">
+            <legend>My Description</legend>
+            <div class="profile" style="width: 100%;">
+                <p class="about" style="width: 50%;">
+                    My name is Ernest Morris, a Ghanaian student from Central Region. I am a christian and worship with the Church Of Pentecost. I am currently a student athlete at the University of Ghana.
+                    I was born on 12th December 1999. I like reading and does more research about Tech stuffs.
+                    
+                </p>
+            </div>
+            <div class="picture" style="width: 50vw;">
+                <img src="./img/myself.jpeg" alt="My Photo" style="width: 50%; ">
+            </div>
+        </fieldset> <br><br>
+
+        <!-- Part 2: A table containing educational information (schools attended and courses) -->
+        <fieldset class="education" style="width: 95vw; display: flex; justify-content: space-evenly;">
+            <legend>Education</legend>
+            <table border="1" style="width: 100%; text-align: left;">
+                <thead>
+                    <tr>
+                        <th>School</th>
+                        <th>Course</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Bompeh Senior High Technical</td>
+                        <td>Genral Arts</td>
+                    </tr>
+                    <tr>
+                        <td>University of Ghana</td>
+                        <td>BSc. Info Tech</td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset><br><br>
+
+        <!-- A form to allow visitors submit their details (name, age, telephone number, gender, ID type and ID number) -->
+        <fieldset class="education" style="width: 95vw; display: flex; justify-content: space-evenly;">
+            <legend>Contact Form</legend>
+            <form action="#" method="post" style="width: 100%;">
+                <div class="form-item">
+                    <label for="name">Enter your Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Morris Osei">
+                </div><br>
+                <div class="form-item">
+                    <label for="age">Enter your age:</label>
+                    <input type="number" name="age" id="age" placeholder="eg. 10">
+                </div><br>
+                <div class="form-item">
+                    <label for="phone">Enter your phone number:</label>
+                    <input type="text" name="phone" id="phone" placeholder="eg. 23344557864">
+                </div><br>
+                <div class="form-item">
+                    <label for="gender">Select Gender:</label>
+                    <select name="gender" id="gender">
+                        <option value="default" selected disabled>Select your gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="custom">Custom</option>
+                    </select>
+                </div><br>
+                <div class="form-item">
+                    <label for="id-type">Select ID Type:</label>
+                    <select name="id-type" id="id-type">
+                        <option value="default" selected disabled>Select your ID Type</option>
+                        <option value="nhis">National Health Insurance Card</option>
+                        <option value="voters">Voters ID Card</option>
+                        <option value="ghana card">Ghana Card</option>
+                    </select>
+                </div><br>
+                <div class="form-item">
+                    <label for="id-number">Enter your ID number:</label>
+                    <input type="text" name="id-number" id="id-number" placeholder="eg. GHA-23423442-3">
+                </div><br>
+            </form>
+        </fieldset>
+    </section>
+</body>
+</html>
